@@ -5,6 +5,8 @@ that are not currently defined. This maybe because they belong to an optional ex
 
 Example PostgreSql extensions introduce functions that are not currently supported by SqlDelight.
 
+A new type resolver is needed https://github.com/griffio/sqldelight-custom-dialect/blob/master/customDialect/src/main/kotlin/griffio/dialect/CustomDialect.kt#L15
+
 ```
 pg_trgm module 
 
