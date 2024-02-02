@@ -19,6 +19,6 @@ strict_word_similarity ( text, text ) → real
 ```
 
 * CREATE EXTENSION support
-  * AWAITING MERGE - https://github.com/cashapp/sqldelight/pull/4541
+  * MERGED - https://github.com/cashapp/sqldelight/pull/4541
 * Function parameters cannot mix types - Only the return type can be specified 
   * AWAITING FIX https://github.com/cashapp/sqldelight/issues/4133
