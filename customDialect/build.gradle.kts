@@ -11,7 +11,7 @@ repositories {
 }
 
 dependencies {
-    api(libs.sqldelight.postgresql.dialect)
+    api(libs.sqldelight.mysql.dialect)
     compileOnly(libs.sqldelight.compiler.env)
 }
 

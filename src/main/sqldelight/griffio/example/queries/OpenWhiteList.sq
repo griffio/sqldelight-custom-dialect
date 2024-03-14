@@ -1,0 +1,10 @@
+CREATE TABLE open_whitelists(
+  userId INTEGER AUTO_INCREMENT,
+  ip TEXT
+);
+
+insert {
+INSERT INTO open_whitelists (userId, ip)
+         VALUES (?, INET_ATON(?));
+         SELECT LAST_INSERT_ID();
+}

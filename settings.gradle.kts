@@ -19,8 +19,10 @@ dependencyResolutionManagement {
             plugin("sqldelight", "app.cash.sqldelight").version(vSqlDelight)
             library("sqldelight-jdbc-driver", "app.cash.sqldelight:jdbc-driver:$vSqlDelight")
             library("sqldelight-postgresql-dialect", "app.cash.sqldelight:postgresql-dialect:$vSqlDelight")
+            library("sqldelight-mysql-dialect", "app.cash.sqldelight:mysql-dialect:$vSqlDelight")
             library("sqldelight-compiler-env", "app.cash.sqldelight:compiler-env:$vSqlDelight")
             library("postgresql-jdbc-driver", "org.postgresql:postgresql:42.5.4")
+            library("mysql-jdbc-driver", "mysql:mysql-connector-java:8.0.15")
         }
     }
 }

@@ -1,9 +1,0 @@
-CREATE TABLE IF NOT EXISTS test_trgm (t text);
-
-insertTrgm:
-INSERT INTO test_trgm (t) VALUES (?);
-
-selectTrgm:
-  SELECT t1.t AS t1, t2.t AS t2, similarity(t1.t, t2.t) AS sml, word_similarity(t1.t, t2.t) AS wsml
-  FROM test_trgm t1
-  CROSS JOIN test_trgm t2;
