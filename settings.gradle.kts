@@ -14,7 +14,7 @@ rootProject.name = "sqldelight-custom-dialect"
 dependencyResolutionManagement {
     versionCatalogs {
         create("libs") {
-            val vSqlDelight = "2.0.1"
+            val vSqlDelight = "2.0.2"
             plugin("kotlin", "org.jetbrains.kotlin.jvm").version("1.9.20")
             plugin("sqldelight", "app.cash.sqldelight").version(vSqlDelight)
             library("sqldelight-jdbc-driver", "app.cash.sqldelight:jdbc-driver:$vSqlDelight")

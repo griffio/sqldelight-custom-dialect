@@ -1,4 +1,4 @@
-# SqlDelight 2.0.1 with Custom Dialect
+# SqlDelight 2.0.2 with Custom Dialect
 
 A custom dialect can be needed if you want to extend a vendor dialect, like PostgreSql, with functions and types
 that are not currently defined. This maybe because they belong to an optional extension that you want to use.

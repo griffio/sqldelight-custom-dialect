@@ -15,7 +15,7 @@ private fun getSqlDriver(): SqlDriver {
 
 fun main() {
     val driver = getSqlDriver()
-    driver.execute(null, "CREATE EXTENSION IF NOT EXISTS pg_trgm", 0) // https://github.com/cashapp/sqldelight/pull/4541
+    // driver.execute(null, "CREATE EXTENSION IF NOT EXISTS pg_trgm", 0) // https://github.com/cashapp/sqldelight/pull/4541
     Sample.Schema.create(driver)
     val queries = Sample(driver).trgmQueries
     queries.insertTrgm("accommodate")
