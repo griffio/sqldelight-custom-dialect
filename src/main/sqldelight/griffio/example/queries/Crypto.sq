@@ -1,0 +1,10 @@
+CREATE EXTENSION IF NOT EXISTS pgcrypto;
+
+CREATE TABLE IF NOT EXISTS profile (username TEXT NOT NULL, password TEXT NOT NULL);
+
+insertProfile:
+INSERT INTO profile(username, password)
+VALUES (:username, crypt(:password, gen_salt('bf', 8)));
+
+
+

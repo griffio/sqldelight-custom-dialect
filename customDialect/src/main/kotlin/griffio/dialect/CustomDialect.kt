@@ -19,6 +19,8 @@ class CustomDialect : SqlDelightDialect by PostgreSqlDialect() {
                 "word_similarity" -> IntermediateType(PrimitiveType.REAL)
                 "similarity" -> IntermediateType(PrimitiveType.REAL)
                 "strict_word_similarity" -> IntermediateType(PrimitiveType.REAL)
+                "crypt" -> IntermediateType(PrimitiveType.TEXT)
+                "gen_salt" -> IntermediateType(PrimitiveType.TEXT)
                 else -> typeResolver.functionType(functionExpr)
             }
         }
